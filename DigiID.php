@@ -121,7 +121,7 @@ class DigiID {
         } catch(InvalidArgumentException $e) {
             return false;
         }
-        if (strlen($address) != 21 || ($address[0] != "\x1E" AND !$testnet) || ($address[0] != "\x6F" AND $testnet)) {
+        if (strlen($address) != 21 || ($address[0] != "\x1E" && !$testnet) || ($address[0] != "\x6F" && $testnet)) {
             return false;
         }
         return true;
