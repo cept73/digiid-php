@@ -159,7 +159,7 @@ class DigiID {
         // extract parameters
         $address = $this->_base58check_decode($address, $testnet);
         
-        if (!$this->isAddressValid($address, $testnet)) {
+        if (strlen($address) != 21 || ($address[0] != "\x1E" AND !$testnet) || ($address[0] != "\x6F" AND $testnet)) {
             throw new InvalidArgumentException('invalid DigiByte address');
         }
 
