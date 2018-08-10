@@ -25,7 +25,7 @@ http://vps.madriguera.me/bitid-php/ (very basic, be gentle) - **503 Service Temp
 
 Installation
 ============
-* Download from https://github.com/phpecc/phpecc.git also into phpecc directory
+* Download from https://github.com/phpecc/phpecc.git into phpecc directory
 * Create a MySQL database, import struct.sql into it.
 * Configure database information and server url in config.php
 
