@@ -20,11 +20,12 @@ https://github.com/bitid/bitid/blob/master/BIP_draft.md
 Demo
 ====
 
-http://vps.madriguera.me/bitid-php/ (very basic, be gentle)
+http://vps.madriguera.me/bitid-php/ (very basic, be gentle) - **503 Service Temporarily Unavailable now**
 
 
 Installation
 ============
+* Download from https://github.com/phpecc/phpecc/tree/366c0d1d00cdf95b0511d34797c116d9be48410e into phpecc directory
 * Create a MySQL database, import struct.sql into it.
 * Configure database information and server url in config.php
 
