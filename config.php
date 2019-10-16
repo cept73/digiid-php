@@ -19,7 +19,7 @@ limitations under the License.
 define('SERVER_URL', 'http://localhost/digiid-php/');
 
 // define database credentials
-define('DB_HOST', '');
-define('DB_USER', '');
-define('DB_PASS', '');
-define('DB_NAME', '');
+define('DB_HOST', '127.0.0.1');
+define('DB_USER', 'root');
+define('DB_PASS', 'ceptCEPT55');
+define('DB_NAME', 'digidiv');

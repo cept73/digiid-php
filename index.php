@@ -25,6 +25,7 @@ $digiid = new DigiID();
 $nonce = $digiid->generateNonce();
 // build uri with nonce, nonce is optional, but we pre-calculate it to avoid extracting it later
 $digiid_uri = $digiid->buildURI(SERVER_URL . 'callback.php', $nonce);
+//$dao->check_installed();
 
 // Insert nonce + IP in the database to avoid an attacker go and try several nonces
 // This will only allow one nonce per IP, but it could be easily modified to allow severals per IP
@@ -34,8 +35,8 @@ $result = $dao->insert($nonce, @$_SERVER['REMOTE_ADDR']);
 if(!$result)
 {
 	echo "<pre>";
-	echo "Database failer\n";
-	var_dump($dao);
+	echo "Database failer. Please check config.php \n";
+	//var_dump($dao);
 	die();
 }
 ?>
